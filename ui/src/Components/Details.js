@@ -20,7 +20,7 @@ const Details = () => {
   const getproduct = async () => {
     try {
       setLoading(true)
-      const res = await axios.get("http://localhost:5000/cars");
+      const res = await axios.get("https://car-deals-bakend.vercel.app");
 
       const newProduct = res.data.find((item) => item.id === parseInt(id));
       setProduct(newProduct);
