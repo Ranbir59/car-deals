@@ -6,24 +6,34 @@ import axios from "axios";
 import { motion } from "framer-motion";
 
 import "../CSS/Vehicles.css";
+import Loading from "./Loading";
 
 const Vehicles = () => {
   const [myData, setMyData] = useState([]);
+  const [loading,setLoading]=useState(false)
   const [isError, setIsError] = useState("");
 
   const apidata = async () => {
     try {
+      setLoading(true)
       const res = await axios.get("http://localhost:5000/cars");
       setMyData(res.data);
+      setLoading(false)
     } catch (error) {
       setIsError(error.message);
+      setLoading(false)
     }
   };
 
+
   useEffect(() => {
+    
     apidata();
   }, []);
 
+  if(loading){
+    return <Loading/>
+  }
   return (
     <>
       {isError !== "" && <h2>{isError}</h2>}

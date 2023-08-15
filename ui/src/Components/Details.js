@@ -4,10 +4,12 @@ import "../CSS/Details.css";
 import { useParams } from "react-router-dom";
 import StripeCheckout from "react-stripe-checkout";
 import axios from "axios";
+import Loading from "./Loading";
 
 const Details = () => {
   console.log(Images);
   const { id } = useParams();
+  const [loading,setLoading]=useState(false)
   const [product, setProduct] = useState({});
   const [image, setImage] = useState({});
 
@@ -17,19 +19,26 @@ const Details = () => {
 
   const getproduct = async () => {
     try {
+      setLoading(true)
       const res = await axios.get("http://localhost:5000/cars");
 
       const newProduct = res.data.find((item) => item.id === parseInt(id));
       setProduct(newProduct);
       setImage(newProduct.imgd);
+      setLoading(false)
     } catch (error) {
       console.log(error.message);
+      setLoading(false)
     }
   };
 
   useEffect(() => {
     getproduct();
   }, []);
+
+  if(loading){
+    return <Loading/>
+  }
 
   return (
     <>

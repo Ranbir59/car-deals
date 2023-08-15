@@ -8,6 +8,7 @@ import Vehicles from "./Vehicles";
 import Details from "./Details";
 import { AnimatePresence } from "framer-motion";
 import Cart from "./Cart";
+import Loading from "./Loading";
 
 const FramerRoute = () => {
   const location = useLocation();
@@ -21,6 +22,9 @@ const FramerRoute = () => {
         <Route path="reviews" element={<Reviews />} />
         <Route path="contact" element={<Contact />} />
         <Route path="cart" element={<Cart />} />
+        <Route path="loading" element={<Loading />} />
+
+        
       </Routes>
 
 
