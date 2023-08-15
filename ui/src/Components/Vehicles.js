@@ -16,7 +16,7 @@ const Vehicles = () => {
   const apidata = async () => {
     try {
       setLoading(true)
-      const res = await axios.get("http://localhost:5000/cars");
+      const res = await axios.get("https://car-deals-bakend.vercel.app");
       setMyData(res.data);
       setLoading(false)
     } catch (error) {
