@@ -1,0 +1,77 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: black;
+  
+}
+
+.conatainer {
+  background-color: black;
+  color: white;
+  font-weight: 500;
+
+}
+
+.salesteam {
+  color: rgb(54, 70, 86);
+
+}
+
+.map{
+  width: 100%;
+  height: 40vh;
+}
+
+.contact-leftside img {
+  min-width: 80%;
+  max-height: 30rem;
+  height: auto;
+}
+
+.contact-input-field {
+  margin-bottom: 3rem;
+}
+
+.contact-rightside form .form-control {
+  border: 1px solid #ced4da;
+  height: 4rem;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  padding-left: 1rem;
+  font-weight: 400;
+}
+
+.contact-rightside form .form-check-input {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+
+.contact-input-feild2{
+  margin-bottom: 3rem;
+}
+
+.contact-rightside form {
+  margin-top: 6rem;
+}
+
+.msarea{
+  border-radius: 10px;
+  padding-left: 10px;
+  padding-top: 10px;
+  font-weight: 500;
+}
+
+.btn{
+  margin-bottom: 20px;
+}
+
+@media (max-width: 575.98px) {
+  .salesteam {
+    font-size: 2.3rem;
+  }
+}

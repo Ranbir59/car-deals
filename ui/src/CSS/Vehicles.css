@@ -1,0 +1,73 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+.veh {
+  font-size: 3rem;
+  font-weight: 600;
+  font-style: oblique;
+  color: red;
+  font-family: "Bebas Neue", cursive;
+}
+
+.vehcard {
+  background-color: black;
+  color: white;
+
+}
+.car-conatiner {
+  background-color: black;
+  
+}
+
+.card-img-top {
+  width: 100%;
+  height: 40vh;
+object-fit:cover;
+}
+.card-body {
+  margin-top: 0px;
+}
+.card-title {
+  padding-top: 20px;
+  font-size: 2rem;
+  font-family: "Bebas Neue", cursive;
+}
+
+
+.Dbtn  {
+  background-color: rgb(27, 27, 27);
+  color: white;
+  width: 140px;
+  height: 50px;
+  border-radius: 20px;
+ 
+margin-top: 18px;
+  font-size: 25px;
+
+  font-family: "Bebas Neue", cursive;
+  text-decoration: none;
+}
+.card-text {
+  padding-top: 10px;
+  color: red;
+  font-weight: 600;
+}
+.Dbtn:hover {
+  color: red;
+  background-color: black;
+  opacity: 0.4;
+}
+
+.vehiclehr {
+  border: 2px solid red;
+}
+
+@media (max-width: 575.98px) {
+  .card-img-top {
+    width: 100%;
+    height: 40%;
+  }
+}

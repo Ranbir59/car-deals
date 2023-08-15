@@ -1,0 +1,75 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+
+.footer{
+    background-color: black;
+    color: white;
+}
+
+
+.Listd{
+    font-family: "Bebas Neue", cursive;
+    font-weight: 400;
+    font-size: 20px;
+}
+.List{
+    font-family: "Bebas Neue", cursive;
+    font-weight: 400;
+    font-size: 22px;
+}
+
+.List li:hover{
+    color: red;
+}
+
+
+.spanf{
+color: red;
+font-size: 60px;
+    font-weight: 300;
+    font-style: oblique;
+}
+
+.headingh1{
+    font-family: "Bebas Neue", cursive;
+    font-style: oblique;
+}
+.headingf{
+    font-family: "Bebas Neue", cursive;
+    color: rgb(192, 10, 10);
+}
+.add{
+    font-family: "Bebas Neue", cursive;
+    font-weight: 300;
+}
+
+.payment{
+    background-color: transparent;
+    width: 75%;
+    height: 55%;
+    margin-top: 20px;
+  
+   
+}
+
+.fa-brands {
+    color: white;
+}
+.fa-brands:hover{
+color: red;
+}
+
+.call{
+    color: red;
+}
+
+.copyright{
+    background-color: red;
+    color: black;
+    font-weight: 600;
+}
+

@@ -1,0 +1,74 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.Cush{
+    font-size: 3.3rem;
+    font-style: oblique;
+    color: rgb(251, 0, 0);
+    font-weight: 600;
+    font-family: "Bebas Neue", cursive;
+}
+
+.Reviews-container{
+    background-color: black;
+
+}
+.imgtest{
+    width: 100%;
+    height: 30vh;
+    margin-top: 30px;
+    object-fit: contain;
+}
+.cardr{
+    background-color: black;
+    color: white;
+}
+
+.star{
+    width: 150px;
+    margin-bottom: auto;
+}
+
+
+.card-body{
+    margin-top: 80px;
+}
+
+.cardname{
+    color: rgb(212, 8, 8);
+}
+
+.Rate{
+    color: white;
+    font-size: 3.5rem;
+}
+
+.Cardp{
+    margin-top: 100px;
+}
+
+.Rhr{
+    width: 430px;
+  margin-left:540px;
+
+  line-height: 44px;
+  border: 2px solid red;
+
+  
+}
+
+@media (max-width: 575.98px){
+    
+    .cardname{
+        margin-left: 50px;
+    }
+         .Cardp {
+            margin-top: 25px;
+         }
+     
+         
+  }
+  

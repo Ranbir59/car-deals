@@ -1,0 +1,93 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.detail-container{
+    background-color: black;
+    color: white;
+    
+}
+
+
+
+.detailpara{
+    font-size: 1.4rem;
+    font-weight: 550;
+}
+
+
+.detail-img{
+    width: 80%;
+    height: auto;
+    object-fit: contain;
+ border-radius: 15px;
+    
+}
+.detailName{
+    font-size: 3.3rem;
+    color: red;
+    font-family: "Bebas Neue", cursive;
+}
+.detailprice{
+    color: red;
+    margin-top: 10px;
+    font-family: "Bebas Neue", cursive;
+}
+.detailbtn{
+margin-top: 10px;
+width: 130px;
+height: 60px;
+background-color: rgb(40, 40, 40);
+color: white;
+font-family: "Bebas Neue", cursive;
+font-size: 2rem;
+border-radius: 20px;
+
+
+}
+
+
+
+.detailhr{
+    width: 450px;
+    color: silver;
+   
+}
+
+.detailbtn:hover{
+    color: red;
+    opacity: 0.4;
+    background-color: black;
+
+}
+
+
+.stripe{
+  margin-top: 15px;
+  background-color: black;
+}
+
+.stripe:hover{
+    opacity: 0.4;
+    
+}
+
+@media (max-width: 575.98px) {
+    .detail-img{
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+        
+    }
+    .detailName{
+        font-size: 2.6rem;
+        color: red;
+        margin-top: 20px;
+        font-family: "Bebas Neue", cursive;
+    }
+    .detailprice{
+        font-size: 2rem;
+    }
+}
